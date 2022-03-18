@@ -1,0 +1,28 @@
+{
+  "float": [
+    {
+      "name": "dimens_5",
+      "value": "5vp"
+    },
+    {
+      "name": "dimens_10",
+      "value": "10vp"
+    },
+    {
+      "name": "dimens_15",
+      "value": "15vp"
+    },
+    {
+      "name": "dimens_20",
+      "value": "20vp"
+    },
+    {
+      "name": "dimens_35",
+      "value": "25vp"
+    },
+    {
+      "name": "dimens_30",
+      "value": "30vp"
+    }
+  ]
+}

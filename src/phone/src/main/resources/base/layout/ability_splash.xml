@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:background_element="$color:splash_red"
+    ohos:orientation="vertical">
+
+    <Image
+        ohos:id="$+id:splash_image"
+        ohos:height="300vp"
+        ohos:width="300vp"
+        ohos:scale_x="4"
+        ohos:scale_y="4"
+        ohos:layout_alignment="center"
+        ohos:image_src="$media:ic_launcher"
+        />
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="OTT Music Station"
+        ohos:text_alignment="center"
+        ohos:text_color="$color:white"
+        ohos:text_size="$float:dimens_30"
+        ohos:text_font="sans-serif"
+        ohos:text_weight="1000"
+        />
+
+</DirectionalLayout>

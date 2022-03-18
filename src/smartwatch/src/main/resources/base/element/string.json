@@ -1,0 +1,56 @@
+{
+  "string": [
+    {
+      "name": "smartwatch_MainAbility",
+      "value": "smartwatch_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "songs_name",
+      "value": "Songs name"
+    },
+    {
+      "name": "title",
+      "value": "Title"
+    },
+    {
+      "name": "refresh",
+      "value": "Refresh"
+    },
+    {
+      "name": "app_Name",
+      "value": "OTT Music Station",
+    },
+    {
+      "name": "audioplayerserviceability_description",
+      "value": "hap sample audio service"
+    },
+    {
+      "name": "playerserviceability_description",
+      "value": "hap sample empty service"
+    },
+    {
+      "name": "device_name",
+      "value": "HONOR 9X"
+    },
+    {
+      "name": "device_id",
+      "value": "3543543543543543543543"
+    },
+    {
+      "name": "VolumeAdjustment",
+      "value": "Volume"
+    },
+    {
+      "name": "cancel",
+      "value": "Cancel"
+    }
+  ]
+}

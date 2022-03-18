@@ -1,0 +1,96 @@
+{
+  "app": {
+    "bundleName": "com.huawei.wearablewearengine",
+    "vendor": "huawei",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.huawei.wearablewearengine",
+    "name": ".MyApplication",
+    "mainAbility": "com.huawei.wearablewearengine.MainAbility",
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "smartwatch",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "action.home.dashboard",
+              "action.songslist.slice",
+              "action.home.controller",
+              "action.home.video",
+              "action.onlinedevice.slice",
+              "action.volume.slice"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.huawei.wearablewearengine.MainAbility",
+        "icon": "$media:ic_launcher",
+        "description": "$string:mainability_description",
+        "label": "$string:smartwatch_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "backgroundModes": [
+          "audioPlayback"
+        ],
+        "name": "com.huawei.wearablewearengine.service.PlayerServiceAbility",
+        "icon": "$media:ic_launcher",
+        "description": "$string:playerserviceability_description",
+        "type": "service"
+      },
+      {
+        "backgroundModes": [
+          "dataTransfer"
+        ],
+        "name": "com.huawei.wearablewearengine.service.MediaPlayerServiceAbility",
+        "icon": "$media:ic_launcher",
+        "description": "$string:audioplayerserviceability_description",
+        "type": "service"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+      },
+      {
+        "name": "ohos.permission.DISTRIBUTED_DEVICE_STATE_CHANGE"
+      },
+      {
+        "name": "ohos.permission.GET_DISTRIBUTED_DEVICE_INFO"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_INFO"
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.GET_WIFI_INFO"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      }
+    ]
+  }
+}

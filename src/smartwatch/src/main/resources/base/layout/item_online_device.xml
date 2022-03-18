@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:background_element="$color:colorSecondaryDark"
+    ohos:bottom_margin="$float:dimens_5"
+    ohos:left_margin="$float:dimens_15"
+    ohos:orientation="vertical"
+    ohos:right_margin="$float:dimens_15"
+    ohos:top_margin="$float:dimens_5">
+    <com.andexert.library.RippleView
+        ohos:id="$+id:ripple_layout"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:rv_color="$color:white"
+        >
+
+        <Image
+            ohos:id="$+id:device_type_iv"
+            ohos:height="$float:dimens_30"
+            ohos:width="$float:dimens_30"
+            ohos:image_src="$media:ic_phone"
+            ohos:align_parent_left="true"
+            ohos:vertical_center="true"
+            ohos:padding="4vp"
+            ohos:scale_mode="inside"/>
+
+        <DirectionalLayout
+            ohos:right_of="$id:device_type_iv"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:center_in_parent="true"
+            ohos:background_element="$color:colorSecondaryDark"
+            ohos:orientation="vertical">
+
+            <Text
+                ohos:id="$+id:device_name"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:layout_alignment="vertical_center"
+                ohos:left_margin="$float:dimens_5"
+                ohos:padding="4vp"
+                ohos:text="$string:device_name"
+                ohos:text_color="$color:white"
+                ohos:text_size="14fp"
+                ohos:text_weight="1000"
+                ohos:weight="1000"/>
+
+            <Text
+                ohos:id="$+id:tv_device_id"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:layout_alignment="vertical_center"
+                ohos:left_margin="$float:dimens_5"
+                ohos:text="$string:device_id"
+                ohos:text_weight="500"
+                ohos:text_color="$color:white"
+                ohos:text_size="10fp"
+                ohos:weight="1000"/>
+
+        </DirectionalLayout>
+    </com.andexert.library.RippleView>
+</DependentLayout>

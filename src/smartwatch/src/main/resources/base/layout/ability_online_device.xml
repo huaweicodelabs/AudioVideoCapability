@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <include
+        ohos:id="$+id:layout_title"
+        ohos:height="50vp"
+        ohos:layout="$layout:layout_title"
+        ohos:width="match_parent"
+        ohos:align_parent_top="true"/>
+
+    <ListContainer
+        ohos:id="$+id:online_device_list"
+        ohos:below="$id:layout_title"
+        ohos:above="$id:layout_cancel"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:layout_alignment="horizontal_center"
+        ohos:margin="20vp"/>
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_refresh"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:alignment="center"
+        ohos:background_element="$color:splash_red"
+        ohos:align_parent_bottom="true"
+        ohos:visibility="hide"
+        >
+        <Text
+            ohos:id="$+id:text_continue"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="$string:refresh"
+            ohos:text_alignment="center"
+            ohos:text_size="14fp"
+            ohos:text_font="serif"
+            ohos:left_margin="$float:dimens_10"
+            ohos:right_margin="$float:dimens_10"
+            ohos:text_color="$color:white"
+            ohos:text_weight="1000"
+            />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:layout_cancel"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:alignment="center"
+        ohos:background_element="$color:splash_red"
+        ohos:align_parent_bottom="true"
+        >
+        <Text
+            ohos:id="$+id:text_cancel"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text="$string:cancel"
+            ohos:text_alignment="center"
+            ohos:text_size="14fp"
+            ohos:text_font="serif"
+            ohos:left_margin="$float:dimens_10"
+            ohos:right_margin="$float:dimens_10"
+            ohos:text_color="$color:white"
+            ohos:text_weight="1000"
+            />
+    </DirectionalLayout>
+
+</DependentLayout>

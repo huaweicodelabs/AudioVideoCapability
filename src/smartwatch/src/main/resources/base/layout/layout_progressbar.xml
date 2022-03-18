@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:alignment="center"
+        ohos:alpha="0.6"
+        ohos:background_element="$color:transparent"
+        >
+        <Image
+            ohos:id="$+id:imgLoading"
+            ohos:height="100px"
+            ohos:width="100px"
+            ohos:image_src="$media:ic_progressindicator"/>
+    </DirectionalLayout>
+
+</DirectionalLayout>

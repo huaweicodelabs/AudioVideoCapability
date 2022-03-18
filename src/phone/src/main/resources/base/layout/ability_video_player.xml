@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:id="$+id:main_layout"
+    ohos:orientation="vertical">
+
+    <SurfaceProvider
+        ohos:id="$+id:surface_provider"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:layout_alignment="center"/>
+
+
+    <DirectionalLayout
+        ohos:id="$+id:header_layout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:align_parent_top="true"
+        ohos:background_element="$color:transparent"
+        ohos:alpha="0.5"
+        ohos:orientation="horizontal"
+        ohos:visibility="hide"
+        >
+
+        <Image
+            ohos:id="$+id:back_button"
+            ohos:height="40vp"
+            ohos:width="40vp"
+            ohos:layout_alignment="start"
+            ohos:scale_mode="inside"
+            ohos:margin="5vp"
+            ohos:background_element="$media:back_icon"
+            />
+
+        <Text
+            ohos:id="$+id:title"
+            ohos:text_size="20fp"
+            ohos:text_color="$color:white"
+            ohos:width="match_content"
+            ohos:height="match_content"
+            ohos:text="Video"
+            ohos:margin="5vp"
+            ohos:layout_alignment="center"
+            ohos:scrollable="true"
+            ohos:truncation_mode="auto_scrolling"
+            />
+    </DirectionalLayout>
+
+    <RoundProgressBar
+        ohos:id="$+id:round_progress_bar"
+        ohos:height="50vp"
+        ohos:width="50vp"
+        ohos:visibility="hide"
+        ohos:progress_width="5vp"
+        ohos:progress_color="$color:splash_red"
+        ohos:layout_alignment="center"
+        ohos:center_in_parent="true"/>
+
+    <DependentLayout
+        ohos:alpha="0.5"
+        ohos:id="$+id:time_layout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:above="$id:footer_layout"
+        ohos:center_in_parent="true"
+        ohos:background_element="$color:transparent"
+        >
+
+        <Text
+            ohos:align_parent_start="true"
+            ohos:id="$+id:start_time_song"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="12fp"
+            ohos:text_color="$color:white"
+            ohos:text="00:00:00"
+            ohos:text_alignment="left"
+            ohos:text_font="$string:san_serif"
+            ohos:text_weight="900"
+            ohos:padding="10vp"
+            ohos:margin="5vp"
+            ohos:truncation_mode="auto_scrolling"
+            />
+
+        <Slider
+            ohos:left_of="$id:end_time_song"
+            ohos:right_of="$id:start_time_song"
+            ohos:center_in_parent="true"
+            ohos:layout_alignment="center"
+            ohos:id="$+id:time_duration_progressbar"
+            ohos:progress_width="10vp"
+            ohos:height="10vp"
+            ohos:width="match_parent"
+            ohos:min="0"
+            ohos:margin="5vp"
+            ohos:progress_element="$color:splash_red"
+            ohos:background_instruct_element="$color:white"/>
+        <Text
+            ohos:align_parent_end="true"
+            ohos:id="$+id:end_time_song"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:text_size="12fp"
+            ohos:text_color="$color:white"
+            ohos:text="00:00:00"
+            ohos:margin="5vp"
+            ohos:text_alignment="left"
+            ohos:text_font="$string:san_serif"
+            ohos:text_weight="900"
+            ohos:padding="10vp"
+            ohos:truncation_mode="auto_scrolling"
+            />
+    </DependentLayout>
+
+    <DependentLayout
+        ohos:id="$+id:footer_layout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$color:transparent"
+        ohos:alpha="0.5"
+        ohos:align_parent_bottom="true"
+        ohos:visibility="hide"
+        >
+
+        <Image
+            ohos:id="$+id:prev_button"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:margin="5vp"
+            ohos:padding="10vp"
+            ohos:scale_mode="center"
+            ohos:layout_alignment="center"
+            ohos:center_in_parent="true"
+            ohos:align_parent_left="true"/>
+
+        <Image
+            ohos:id="$+id:rewind_button"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:center_in_parent="true"
+            ohos:margin="5vp"
+            ohos:padding="10vp"
+            ohos:scale_mode="center"
+            ohos:layout_alignment="center"
+            ohos:right_of="$id:prev_button"
+            ohos:visibility="hide"
+            />
+
+
+        <Image
+            ohos:id="$+id:play_button"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:margin="5vp"
+            ohos:padding="10vp"
+            ohos:scale_mode="center"
+            ohos:layout_alignment="center"
+            ohos:center_in_parent="true" />
+
+        <Image
+            ohos:id="$+id:forward_button"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:margin="5vp"
+            ohos:padding="10vp"
+            ohos:scale_mode="center"
+            ohos:layout_alignment="center"
+            ohos:center_in_parent="true"
+            ohos:left_of="$id:next_button"
+            ohos:visibility="hide"
+            />
+
+
+        <Image
+            ohos:id="$+id:next_button"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:center_in_parent="true"
+            ohos:margin="5vp"
+            ohos:padding="10vp"
+            ohos:scale_mode="center"
+            ohos:layout_alignment="center"
+            ohos:align_parent_right="true" />
+
+    </DependentLayout>
+
+</DependentLayout>

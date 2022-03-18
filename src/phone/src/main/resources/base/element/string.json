@@ -1,0 +1,53 @@
+{
+  "string": [
+    {
+      "name": "phone_MainAbility",
+      "value": "OTT Music Station"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "splashability_description",
+      "value": "hap sample empty provider"
+    },{
+      "name": "splashability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "phone_SplashAbility",
+      "value": "phone_SplashAbility"
+    },
+    {
+      "name": "offline_text",
+      "value": "Offline"
+    },{
+      "name": "video_text",
+      "value": "Video"
+    },
+    {
+      "name": "online_text",
+      "value": "Online"
+    },{
+      "name": "audio_text",
+      "value": "Audio"
+    },
+    {
+      "name": "san_serif",
+      "value": "sans-serif"
+    },
+    {
+      "name": "audioplayerserviceability_description",
+      "value": "hap sample audio service"
+    },
+    {
+      "name": "playerserviceability_description",
+      "value": "hap sample empty service"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "color": [
+    {
+      "name" : "colorPrimary",
+      "value" : "#FFC107"
+    },
+    {
+      "name" : "colorSecondaryDark",
+      "value" : "#FFA000"
+    },
+    {
+      "name" : "colorSecondaryLight",
+      "value" : "#FFC107"
+    },
+    {
+      "name":"accent",
+      "value":"#FFC107"
+    },
+    {
+      "name": "litBlue",
+      "value": "#20BCD2"
+    },
+    {
+      "name": "blue",
+      "value": "#3CADFB"
+    },
+    {
+      "name":"text",
+      "value":"#212121"
+    },
+    {
+      "name":"litYelllow",
+      "value":"#E9BA80"
+    },
+    {
+      "name" : "black",
+      "value" : "#000000"
+    },
+    {
+      "name" : "grey",
+      "value" : "#777777"
+    },
+    {
+      "name":"transparent",
+      "value":"#66000000"
+    },
+    {
+      "name":"red",
+      "value":"#E72637"
+    },
+    {
+      "name": "whiteTransparent",
+      "value": "#00FFFFFF"
+    },
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "divider",
+      "value": "#BDBDBD"
+    },
+    {
+      "name": "splash_red",
+      "value": "#E13636"
+    },
+    {
+      "name": "secondary_red",
+      "value": "#FFC11B1B"
+    },
+    {
+      "name" : "mixed4",
+      "value" : "#0478B9"
+    }
+  ]
+}

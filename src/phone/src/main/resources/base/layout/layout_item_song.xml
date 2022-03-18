@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:padding="2vp">
+    <com.andexert.library.RippleView
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:rv_color="$color:red"
+        >
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:padding="2vp"
+            ohos:orientation="horizontal">
+
+            <Image
+                ohos:id="$+id:ima_song"
+                ohos:height="60vp"
+                ohos:width="60vp"
+                ohos:background_element="$graphic:background_button"
+                ohos:layout_alignment="center"
+                ohos:margin="10vp"
+                ohos:scale_mode="inside"
+                >
+            </Image>
+
+            <Text
+                ohos:id="$+id:text_song"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:layout_alignment="center"
+                ohos:margin="10vp"
+                ohos:text_alignment="left"
+                ohos:text_color="$color:white"
+                ohos:text_size="14fp"
+                ohos:text="Song name"
+                ohos:truncation_mode="ellipsis_at_end"
+                ohos:weight="1"/>
+        </DirectionalLayout>
+    </com.andexert.library.RippleView>
+    <Component
+        ohos:height="2vp"
+        ohos:width="match_parent"
+        ohos:background_element="$color:splash_red"/>
+
+
+</DirectionalLayout>

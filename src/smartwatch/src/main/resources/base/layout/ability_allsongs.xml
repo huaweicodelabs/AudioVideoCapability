@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+    <include
+        ohos:id="$+id:layout_title"
+        ohos:height="50vp"
+        ohos:layout="$layout:layout_title"
+        ohos:width="match_parent"
+        ohos:align_parent_top="true"/>
+
+    <ListContainer
+        ohos:id="$+id:song_list_container"
+        ohos:below="$id:layout_title"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:rebound_effect="true"
+        />
+
+    <include
+        ohos:id="$+id:loading_img_content"
+        ohos:height="match_parent"
+        ohos:layout="$layout:layout_progressbar"
+        ohos:width="match_parent"
+        ohos:center_in_parent="true"
+        ohos:visibility="hide"/>
+</DependentLayout>

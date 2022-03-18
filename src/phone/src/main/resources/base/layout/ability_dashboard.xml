@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:black"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        ohos:id="$+id:song_list_layout"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:visibility="visible"
+        >
+        <ListContainer
+            ohos:align_parent_top="true"
+            ohos:id="$+id:list_container"
+            ohos:above="$id:song_layout"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:weight="1"
+            ohos:rebound_effect="true"
+            ohos:bottom_margin="10vp"
+            />
+        <DirectionalLayout
+            ohos:id="$+id:song_layout"
+            ohos:above="$id:tab_layout"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:alignment="bottom"
+            ohos:padding="10vp"
+            ohos:alpha="1"
+            ohos:background_element="$color:grey"
+            ohos:orientation="horizontal">
+
+            <Image
+                ohos:id="$+id:detail_thumb_image"
+                ohos:height="70vp"
+                ohos:width="70vp"
+                ohos:padding="8vp"
+                ohos:start_margin="5vp"
+                ohos:layout_alignment="center"
+                ohos:image_src="$media:ic_launcher"
+                />
+
+
+            <Text
+                ohos:id="$+id:list_title_song"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text_size="14fp"
+                ohos:text_color="$color:white"
+                ohos:text="Song name"
+                ohos:text_font="$string:san_serif"
+                ohos:text_weight="900"
+                ohos:text_alignment="left|center"
+                ohos:padding="10vp"
+                ohos:truncation_mode="auto_scrolling"
+                ohos:layout_alignment="center"/>
+            <com.andexert.library.RippleView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:rv_color="$color:white"
+                >
+                <Image
+                    ohos:id="$+id:button_list_play_song"
+                    ohos:height="60vp"
+                    ohos:width="60vp"
+                    ohos:end_margin="10vp"
+                    ohos:image_src="$media:play"
+                    ohos:layout_alignment="center"/>
+            </com.andexert.library.RippleView>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:tab_layout"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:alignment="bottom"
+            ohos:padding="10vp"
+            ohos:align_parent_bottom="true"
+            ohos:background_element="$color:splash_red"
+            ohos:orientation="horizontal">
+
+            <Button
+                ohos:id="$+id:list_online_audio_button"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:padding="8vp"
+                ohos:text_size="14fp"
+                ohos:text_color="$color:white"
+                ohos:text="$string:audio_text"
+                ohos:margin="5vp"
+                ohos:layout_alignment="center"
+                ohos:background_element="$graphic:background_button"
+                />
+
+            <Button
+                ohos:id="$+id:list_online_video_button"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:padding="8vp"
+                ohos:text="$string:video_text"
+                ohos:text_size="14fp"
+                ohos:text_color="$color:grey"
+                ohos:text_alignment="center"
+                ohos:margin="5vp"
+                ohos:layout_alignment="center"
+                ohos:background_element="$graphic:background_button"
+                />
+
+        </DirectionalLayout>
+
+    </DependentLayout>
+
+    <DependentLayout
+        ohos:id="$+id:song_detail_layout"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:visibility="hide"
+        >
+
+        <StackLayout
+            ohos:id="$+id:stack"
+            ohos:height="match_content"
+            ohos:align_parent_top="true"
+            ohos:width="match_parent"
+            ohos:center_in_parent="true"
+            >
+
+            <Image
+                ohos:id="$+id:stack_background"
+                ohos:height="200vp"
+                ohos:width="match_parent"
+                ohos:layout_alignment="top"
+                ohos:scale_mode="stretch"
+                />
+
+            <DependentLayout
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                >
+                <com.andexert.library.RippleView
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:rv_color="$color:white"
+                    >
+                    <Image
+                        ohos:id="$+id:back_button"
+                        ohos:height="40vp"
+                        ohos:width="40vp"
+                        ohos:align_parent_top="true"
+                        ohos:align_parent_start="true"
+                        ohos:scale_mode="inside"
+                        ohos:center_in_parent="true"
+                        ohos:margin="10vp"
+                        ohos:background_element="$media:back_icon"
+                        />
+                </com.andexert.library.RippleView>
+                <Text
+                    ohos:id="$+id:detail_title_song"
+                    ohos:right_of="$id:back_button"
+                    ohos:height="match_content"
+                    ohos:width="match_parent"
+                    ohos:text_size="16fp"
+                    ohos:text_color="$color:white"
+                    ohos:align_parent_top="true"
+                    ohos:right_margin="40vp"
+                    ohos:top_margin="10vp"
+                    ohos:text="Song name"
+                    ohos:text_alignment="center"
+                    ohos:text_font="$string:san_serif"
+                    ohos:text_weight="900"
+                    ohos:padding="10vp"
+                    ohos:truncation_mode="auto_scrolling"
+                    />
+
+                <Image
+                    ohos:height="250vp"
+                    ohos:width="250vp"
+                    ohos:id="$+id:song_thumbnail"
+                    ohos:below="$id:detail_title_song"
+                    ohos:center_in_parent="true"
+                    ohos:horizontal_center="true"
+                    ohos:image_src="$id:detail_thumb_image"
+                    />
+
+            </DependentLayout>
+
+        </StackLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:layout_timer"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:margin="10fp"
+            ohos:center_in_parent="true"
+            ohos:below="$id:stack"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:id="$+id:start_time_song"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:text_color="$color:white"
+                ohos:text="00:00:00"
+                ohos:text_alignment="left"
+                ohos:text_font="$string:san_serif"
+                ohos:text_weight="900"
+                ohos:padding="10vp"
+                ohos:truncation_mode="auto_scrolling"
+                />
+            <Slider
+                ohos:left_of="$id:end_time_song"
+                ohos:right_of="$id:start_time_song"
+                ohos:layout_alignment="center"
+                ohos:center_in_parent="true"
+                ohos:id="$+id:time_duration_progressbar"
+                ohos:progress_width="10vp"
+                ohos:height="10vp"
+                ohos:width="200vp"
+                ohos:min="0"
+                ohos:margin="5vp"
+                ohos:progress_element="$color:splash_red"
+                ohos:background_instruct_element="$color:white"/>
+            <Text
+                ohos:id="$+id:end_time_song"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text_size="12fp"
+                ohos:text_color="$color:white"
+                ohos:text="00:00:00"
+                ohos:text_alignment="left"
+                ohos:text_font="$string:san_serif"
+                ohos:text_weight="900"
+                ohos:padding="10vp"
+                ohos:truncation_mode="auto_scrolling"
+                />
+        </DirectionalLayout>
+
+
+        <DirectionalLayout
+            ohos:id="$+id:controller_layout"
+            ohos:below="$id:layout_timer"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:margin="10fp"
+            ohos:alignment="center"
+            ohos:center_in_parent="true"
+            ohos:orientation="horizontal">
+            <com.andexert.library.RippleView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:rv_color="$color:white"
+                >
+                <Image
+                    ohos:id="$+id:detail_song_shuffle"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:layout_alignment="center"
+                    ohos:margin="10vp"
+                    ohos:padding="10vp"
+                    ohos:image_src="$media:ic_shuffle"
+                    ohos:scale_mode="inside"
+                    ohos:visibility="visible"
+                    />
+            </com.andexert.library.RippleView>
+            <com.andexert.library.RippleView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:rv_color="$color:white"
+                >
+                <Image
+                    ohos:id="$+id:detail_song_previous"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:scale_mode="inside"
+                    ohos:margin="10vp"
+                    ohos:padding="10vp"
+                    ohos:image_src="$media:ic_previous"
+                    ohos:layout_alignment="center"
+                    />
+            </com.andexert.library.RippleView>
+            <com.andexert.library.RippleView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:rv_color="$color:white"
+                >
+                <Image
+                    ohos:id="$+id:detail_song_play"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:margin="10vp"
+                    ohos:padding="10vp"
+                    ohos:scale_mode="center"
+                    ohos:image_src="$media:play"
+                    ohos:layout_alignment="center"
+                    />
+            </com.andexert.library.RippleView>
+            <com.andexert.library.RippleView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:rv_color="$color:white"
+                >
+                <Image
+                    ohos:id="$+id:detail_song_next"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:margin="10vp"
+                    ohos:padding="10vp"
+                    ohos:image_src="$media:ic_next"
+                    ohos:layout_alignment="center"
+                    ohos:scale_mode="center"/>
+            </com.andexert.library.RippleView>
+            <com.andexert.library.RippleView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:rv_color="$color:white"
+                >
+                <Image
+                    ohos:id="$+id:detail_song_loop"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:margin="10vp"
+                    ohos:padding="0vp"
+                    ohos:image_src="$media:ic_oval_loop"
+                    ohos:layout_alignment="center"
+                    ohos:scale_mode="center"/>
+            </com.andexert.library.RippleView>
+        </DirectionalLayout>
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:below="$id:controller_layout"
+            ohos:width="match_parent"
+            ohos:background_element="$graphic:background_box"
+            ohos:top_margin="$float:dimens_10"
+            ohos:left_margin="$float:dimens_30"
+            ohos:right_margin="$float:dimens_30"
+            ohos:bottom_margin="$float:dimens_10">
+
+            <DirectionalLayout
+                ohos:id="$+id:music_director_layout"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:margin="10vp"
+                ohos:alignment="center"
+                ohos:visibility="hide"
+                ohos:orientation="horizontal">
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_size="14fp"
+                    ohos:text_color="$color:white"
+                    ohos:text="Music Director :"
+                    ohos:weight="1"
+                    ohos:text_font="$string:san_serif"
+                    ohos:text_weight="900"
+                    ohos:padding="10vp"
+                    ohos:text_alignment="center"
+                    ohos:truncation_mode="auto_scrolling"
+                    />
+
+
+
+                <Text
+                    ohos:id="$+id:music_director_song"
+                    ohos:height="match_parent"
+                    ohos:width="match_content"
+                    ohos:text_size="14fp"
+                    ohos:text_color="$color:white"
+                    ohos:weight="1"
+                    ohos:text="A R Rahman"
+                    ohos:text_font="$string:san_serif"
+                    ohos:text_weight="900"
+                    ohos:padding="10vp"
+                    ohos:multiple_lines="true"
+                    ohos:text_alignment="left"
+                    ohos:truncation_mode="auto_scrolling"
+                    />
+
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:id="$+id:singer_layout"
+                ohos:below="$id:music_director_layout"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:margin="10vp"
+                ohos:alignment="center"
+                ohos:orientation="horizontal">
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_size="14fp"
+                    ohos:text_color="$color:white"
+                    ohos:weight="1"
+                    ohos:text="Singers :"
+                    ohos:text_font="$string:san_serif"
+                    ohos:text_weight="900"
+                    ohos:padding="10vp"
+                    ohos:text_alignment="center"
+                    ohos:truncation_mode="auto_scrolling"
+                    />
+
+
+                <Text
+                    ohos:id="$+id:singer_song"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_size="14fp"
+                    ohos:text_color="$color:white"
+                    ohos:text="Dhee"
+                    ohos:weight="1"
+                    ohos:multiple_lines="true"
+                    ohos:padding="10vp"
+                    ohos:text_font="$string:san_serif"
+                    ohos:text_weight="900"
+                    ohos:text_alignment="left"
+                    ohos:truncation_mode="auto_scrolling"
+                    />
+            </DirectionalLayout>
+
+            <DirectionalLayout
+                ohos:id="$+id:film_layout"
+                ohos:below="$id:singer_layout"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:margin="10vp"
+                ohos:alignment="center"
+                ohos:orientation="horizontal">
+
+                <Text
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_size="14fp"
+                    ohos:text_color="$color:white"
+                    ohos:text="Album :"
+                    ohos:weight="1"
+                    ohos:text_font="$string:san_serif"
+                    ohos:text_weight="900"
+                    ohos:padding="10vp"
+                    ohos:text_alignment="center"
+                    ohos:truncation_mode="auto_scrolling"
+                    />
+
+
+                <Text
+                    ohos:id="$+id:film_song"
+                    ohos:height="match_content"
+                    ohos:width="match_content"
+                    ohos:text_size="14fp"
+                    ohos:text_color="$color:white"
+                    ohos:weight="1"
+                    ohos:text="Avengers EndGame"
+                    ohos:multiple_lines="true"
+                    ohos:text_font="$string:san_serif"
+                    ohos:text_weight="900"
+                    ohos:padding="10vp"
+                    ohos:text_alignment="left"
+                    ohos:truncation_mode="auto_scrolling"
+                    />
+            </DirectionalLayout>
+        </DirectionalLayout>
+
+    </DependentLayout>
+
+    <include
+        ohos:id="$+id:loading_img_content"
+        ohos:height="match_parent"
+        ohos:layout="$layout:layout_progressbar"
+        ohos:width="match_parent"
+        ohos:center_in_parent="true"
+        ohos:visibility="hide"/>
+
+    <RoundProgressBar
+        ohos:id="$+id:round_progress_bar"
+        ohos:height="50vp"
+        ohos:width="50vp"
+        ohos:visibility="hide"
+        ohos:progress_width="5vp"
+        ohos:progress_color="$color:splash_red"
+        ohos:center_in_parent="true"/>
+
+</DependentLayout>

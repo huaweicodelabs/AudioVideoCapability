@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical">
+    <Text
+        ohos:id="$+id:msg_toast"
+        ohos:height="match_content"
+        ohos:width="200vp"
+        ohos:left_padding="16vp"
+        ohos:right_padding="16vp"
+        ohos:top_padding="5vp"
+        ohos:bottom_padding="5vp"
+        ohos:layout_alignment="center"
+        ohos:text_alignment="center"
+        ohos:text_size="12fp"
+        ohos:text_color="$color:white"
+        ohos:multiple_lines="true"
+        ohos:text="This is a ToastDialog for the customized component"
+        ohos:background_element="$graphic:background_toast_element"/>
+</DirectionalLayout>

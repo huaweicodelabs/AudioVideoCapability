@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:id="$+id:main_layout"
+    ohos:orientation="vertical">
+
+    <SurfaceProvider
+        ohos:id="$+id:surface_provider"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:layout_alignment="center"/>
+
+    <include
+        ohos:id="$+id:layout_title"
+        ohos:height="50vp"
+        ohos:layout="$layout:layout_title"
+        ohos:width="match_parent"
+        ohos:align_parent_top="true"
+        />
+
+    <DirectionalLayout
+        ohos:id="$+id:player_controller"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:orientation="horizontal"
+        ohos:center_in_parent="true"
+        ohos:alignment="center"
+        ohos:top_margin="$float:dimens_5"
+        ohos:visibility="hide"
+        >
+        <com.andexert.library.RippleView
+            ohos:id="$+id:ripple_previous"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:rv_color="$color:white"
+            >
+            <Image
+                ohos:id="$+id:img_previous"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:image_src="$media:ic_previous"
+                ohos:scale_mode="center"
+                ohos:scale_x="0.5"
+                ohos:scale_y="0.5"/>
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            ohos:id="$+id:ripple_play"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:rv_color="$color:white"
+            >
+            <Image
+                ohos:id="$+id:img_play"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:image_src="$media:play"
+                ohos:scale_mode="center"
+                ohos:scale_x="0.75"
+                ohos:scale_y="0.75"
+                />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            ohos:id="$+id:ripple_next"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:rv_color="$color:white"
+            >
+            <Image
+                ohos:id="$+id:img_next"
+                ohos:width="match_content"
+                ohos:height="match_content"
+                ohos:image_src="$media:ic_next"
+                ohos:scale_mode="center"
+                ohos:scale_x="0.5"
+                ohos:scale_y="0.5"
+                />
+        </com.andexert.library.RippleView>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:bottom_layout"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:orientation="horizontal"
+        ohos:center_in_parent="true"
+        ohos:alignment="center"
+        ohos:horizontal_center="true"
+        ohos:align_parent_bottom="true"
+        ohos:top_margin="$float:dimens_5"
+        ohos:visibility="hide"
+        >
+        <com.andexert.library.RippleView
+            ohos:id="$+id:ripple_cast"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:rv_color="$color:white"
+            >
+            <Image
+                ohos:id="$+id:img_cast"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:image_src="$media:ic_distribute_grey"
+                ohos:scale_mode="inside"
+                ohos:scale_x="0.5"
+                ohos:scale_y="0.5"
+                />
+        </com.andexert.library.RippleView>
+    </DirectionalLayout>
+
+</DependentLayout>
